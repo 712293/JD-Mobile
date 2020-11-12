@@ -1,31 +1,15 @@
+/* 初始化样式   */
+
 body {
-    width: 100%;
-    min-width: 320px;
-    max-width: 780px;
     margin: 0 auto;
+    min-width: 320px;
+    max-width: 640px;
+    background-color: #fff;
     font-size: 14px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #666;
     line-height: 1.5;
-}
-
-a {
     color: #666;
-    text-decoration: none;
-}
-
-* {
-    outline: none;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-img {
-    vertical-align: top;
+    height: 2000px;
 }
 
 
@@ -50,8 +34,20 @@ a {
     -webkit-touch-callout: none;
 }
 
+a {
+    color: #666666;
+    text-decoration: none;
+}
 
-/* 顶部 */
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    vertical-align: middle;
+}
 
 .app {
     height: 45px;
@@ -61,8 +57,8 @@ a {
     float: left;
     height: 45px;
     line-height: 45px;
-    text-align: center;
     background-color: #333333;
+    text-align: center;
     color: #fff;
 }
 
@@ -71,7 +67,6 @@ a {
 }
 
 .app ul li:nth-child(1) img {
-    vertical-align: middle;
     width: 10px;
 }
 
@@ -94,9 +89,6 @@ a {
 }
 
 
-/* 顶部 */
-
-
 /* 搜索 */
 
 .search-wrap {
@@ -106,17 +98,6 @@ a {
     width: 100%;
     min-width: 320px;
     max-width: 640px;
-    z-index: 999;
-}
-
-.search-btn::before {
-    content: "";
-    display: block;
-    width: 20px;
-    height: 20px;
-    background: url(../images/s-btn.png) no-repeat;
-    background-size: 20px 18px;
-    margin: 14px 0 0 15px;
 }
 
 .search-btn {
@@ -127,40 +108,50 @@ a {
     height: 44px;
 }
 
-.search {
-    position: relative;
-    height: 30px;
-    margin: 0 50px 0;
-    margin-top: 7px;
-    border-radius: 15px;
-    background-color: #fff;
+.search-btn::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 18px;
+    background: url(../images/s-btn.png) no-repeat;
+    background-size: 20px 18px;
+    margin: 14px 0 0 15px;
 }
 
 .search-login {
     position: absolute;
-    top: 0;
     right: 0;
+    top: 0;
     width: 40px;
     height: 44px;
     color: #fff;
     line-height: 44px;
 }
 
+.search {
+    position: relative;
+    height: 30px;
+    background-color: #fff;
+    margin: 0 50px;
+    border-radius: 15px;
+    margin-top: 7px;
+}
+
 .jd-icon {
+    width: 20px;
+    height: 15px;
     position: absolute;
     top: 8px;
     left: 13px;
-    width: 20px;
-    height: 15px;
-    background: url(../images/jd.png);
+    background: url(../images/jd.png) no-repeat;
     background-size: 20px 15px;
 }
 
 .jd-icon::after {
+    content: "";
     position: absolute;
     right: -8px;
     top: 0;
-    content: "";
     display: block;
     width: 1px;
     height: 15px;
@@ -177,63 +168,8 @@ a {
     background-size: 200px auto;
 }
 
-.shu {
-    position: absolute;
-    top: 6px;
-    left: 80px;
-    border: none;
-    background: 0 0;
-    font-size: 12px;
-    color: #232326;
-    box-sizing: border-box;
-    -webkit-box-flex: 1;
-    height: auto;
-    vertical-align: middle;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    width: 70%;
-    line-height: 16px;
-}
-
-
-/* 搜索 */
-
-
-/* 主体 */
-
 .slider img {
     width: 100%;
-}
-
-
-/* 复制swiper css样式 */
-
-.swiper-container {
-    width: 100%;
-    height: 100%;
-}
-
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-}
-
-.swiper-pagination-bullet {
-    background: #fff!important;
 }
 
 
@@ -241,17 +177,20 @@ a {
 
 .brand {
     overflow: hidden;
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px 10xp 0 0;
 }
 
 .brand div {
     float: left;
-    width: 33.33333%;
+    width: 33.33%;
 }
 
 .brand div img {
     width: 100%;
 }
+
+
+/* nav部分 */
 
 nav {
     padding-top: 5px;
@@ -272,8 +211,15 @@ nav a span {
     display: block;
 }
 
+
+/* news */
+
 .news {
     margin-top: 20px;
+}
+
+.news img {
+    width: 100%;
 }
 
 .news a {
@@ -285,14 +231,8 @@ nav a span {
     width: 50%;
 }
 
-.news a:nth-child(n+2) {
+.news a:nth-child(2),
+.news a:nth-child(3) {
     width: 25%;
     border-left: 1px solid #ccc;
 }
-
-.news img {
-    width: 100%;
-}
-
-
-/* 主体 */
